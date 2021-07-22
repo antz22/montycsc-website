@@ -1,0 +1,615 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+:root {
+  --primary-color: #009973;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  padding: 1em;
+  max-width: 1272px;
+  margin: auto;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .container .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .container .nav-left #navbar-logo {
+  width: 4.2em;
+  height: 3.5em;
+}
+
+.navbar .container .nav-left .navbar-text {
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.navbar .container .mobile-menu {
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+
+.navbar .container nav {
+  display: none;
+}
+
+.navbar .container nav .mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+.navbar .container nav ul.primary-nav > * {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar .container nav .nav-cta {
+  background-color: #009973;
+  padding: 0.5em 0.3em;
+  border-radius: 10px;
+  margin-left: 17px;
+}
+
+.navbar .container nav .nav-cta a {
+  color: white;
+  font-weight: 600;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.hero-ctnr {
+  max-width: 1272px;
+  margin: auto;
+}
+
+section.hero {
+  text-align: center;
+}
+
+section.hero .container {
+  line-height: 1.7em;
+}
+
+section.hero .container .header {
+  line-height: 1.6em;
+}
+
+section.hero .container .subhead {
+  margin-top: 2em;
+}
+
+section.hero .container .hero-cta {
+  background-color: #00D19D;
+  border-radius: 5em;
+  padding: .5em 1.2em;
+  width: 9em;
+  margin: 2em auto auto auto;
+  cursor: pointer;
+}
+
+section.hero .container .hero-cta .primary-cta {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.header {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+section.hero-right {
+  padding: 0em;
+}
+
+section.hero-right .hero-img {
+  background-color: #235347;
+  margin: auto;
+  width: 15em;
+  height: 20em;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 999;
+}
+
+section.hero-right .hero-img .hero-img-pic {
+  height: 20em;
+  margin-top: -10px;
+  margin-left: 16px;
+}
+
+section.activities {
+  background-color: var(--primary-color);
+  text-align: center;
+  margin-top: 9.4em;
+  padding-top: 15em;
+  z-index: -1;
+  color: white;
+}
+
+section.activities .header {
+  margin-top: 2em;
+  font-size: 1.7em;
+  margin-bottom: -1em;
+}
+
+section.activities .activity {
+  max-width: 1100px;
+  margin: auto;
+}
+
+section.activities .activity img {
+  width: 13.75em;
+  margin-top: 5em;
+  border-radius: 12px;
+}
+
+section.activities .activity h2 {
+  margin-top: 2em;
+}
+
+section.activities .activity p {
+  margin-top: 1.2em;
+}
+
+section.activities .activity .workshop-link a {
+  color: var(--primary-color);
+  font-size: 0.9em;
+  border-radius: 12px;
+  background-color: white;
+  padding: .8em;
+  padding-right: 36px;
+}
+
+section.activities .activity .workshop-link #arrow {
+  width: 20px;
+  position: absolute;
+  margin-left: 6px;
+}
+
+section.events {
+  text-align: center;
+}
+
+section.events .header {
+  margin-bottom: 2em;
+}
+
+section.events .event {
+  padding: 2em;
+  -webkit-box-shadow: 0px 8px 25px 5px rgba(14, 80, 3, 0.15);
+          box-shadow: 0px 8px 25px 5px rgba(14, 80, 3, 0.15);
+  margin: 5em auto auto auto;
+  max-width: 32em;
+}
+
+section.events .event img {
+  margin-top: 1.4em;
+  max-width: 16.4em;
+  width: 80%;
+  border-radius: 10px;
+}
+
+section.events .event p {
+  margin-top: 1.4em;
+}
+
+section.faq {
+  background-color: rgba(3, 128, 60, 0.1);
+  text-align: center;
+}
+
+section.faq .header {
+  margin-bottom: 3em;
+}
+
+section.faq .question {
+  margin-top: 2.4em;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 8px 30px 5px rgba(112, 144, 176, 0.15);
+          box-shadow: 0px 8px 30px 5px rgba(112, 144, 176, 0.15);
+  padding: 1em;
+}
+
+section.faq .question h3 {
+  font-weight: 600;
+}
+
+section.cta {
+  text-align: center;
+}
+
+section.cta .header {
+  margin-top: -1em;
+}
+
+section.cta .cta-email p {
+  margin-top: 1.5em;
+}
+
+section.cta .cta-email input {
+  margin-top: 1.1em;
+  border: 2.5px solid #009973;
+  border-radius: 45px;
+  padding: .4em 1em;
+  font-size: 1em;
+}
+
+section.cta .cta-email input::-webkit-input-placeholder {
+  color: #9D9D9D;
+}
+
+section.cta .cta-email input:-ms-input-placeholder {
+  color: #9D9D9D;
+}
+
+section.cta .cta-email input::-ms-input-placeholder {
+  color: #9D9D9D;
+}
+
+section.cta .cta-email input::placeholder {
+  color: #9D9D9D;
+}
+
+section.cta .cta-email .cta-email-btn-div {
+  background-color: #009973;
+  border-radius: 5em;
+  padding: .5em 1.2em;
+  width: 6em;
+  margin: 2em auto auto auto;
+  cursor: pointer;
+}
+
+section.cta .cta-email .cta-email-btn-div .cta-email-btn {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+section.footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+}
+
+section.footer .logo {
+  text-align: left;
+  width: 70%;
+  max-width: 20em;
+  margin: 3em auto auto auto;
+}
+
+section.footer .logo img {
+  width: 5em;
+}
+
+section.footer .logo p {
+  margin-left: 4.4em;
+  margin-top: -3em;
+  font-size: 1.4em;
+}
+
+section.footer .email {
+  margin: auto;
+  vertical-align: middle;
+  height: 3.125em;
+  position: relative;
+}
+
+section.footer .email * {
+  display: inline-block;
+}
+
+section.footer .email img {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 1em auto auto;
+}
+
+section.footer .email .email-address {
+  margin: auto auto auto 3em;
+  text-align: left;
+}
+
+section.footer .socials {
+  margin-top: 2.5em;
+}
+
+section.footer .socials * {
+  width: 1.0em;
+}
+
+section.footer .socials #middle {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 1080px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  .navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar .container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .navbar .container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar .container nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar .container nav li.current a {
+    font-weight: bold;
+  }
+  section {
+    padding: 2em 8em;
+  }
+  .header {
+    font-size: 1.6em;
+  }
+  div.hero-ctnr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2em 8em;
+  }
+  section.hero {
+    padding: 0;
+  }
+  section.hero .container {
+    text-align: left;
+  }
+  section.hero .container .header {
+    max-width: 13.125em;
+    line-height: 2em;
+  }
+  section.hero .container .header h1 {
+    font-weight: 700;
+  }
+  section.hero .container .subhead {
+    max-width: 25em;
+    font-size: .9em;
+    color: #737373;
+  }
+  section.hero .container .hero-cta {
+    margin: 3em 0 0 0;
+    text-align: center;
+  }
+  section.hero-right {
+    width: 50%;
+    text-align: left;
+  }
+  section.hero-right .container {
+    position: relative;
+  }
+  section.hero-right .container .hero-img {
+    width: 25em;
+    height: 30em;
+  }
+  section.hero-right .container .hero-img img {
+    height: 30em;
+    width: 25em;
+  }
+  section.activities {
+    margin-top: 12em;
+    padding-top: 4em;
+    padding-bottom: 8em;
+  }
+  section.activities .container .activity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 7em;
+  }
+  section.activities .container .activity img {
+    margin: auto;
+  }
+  section.activities .container .activity .right-side {
+    text-align: left;
+    padding-left: 6em;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 10em;
+  }
+  section.activities .container .activity .right-side h2, section.activities .container .activity .right-side p {
+    margin-top: 0;
+  }
+  section.events {
+    margin-bottom: 6em;
+  }
+  section.events .container .event p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  section.faq {
+    padding-top: 5em;
+    padding-bottom: 8em;
+  }
+  section.faq .header {
+    font-size: 1.4em;
+    margin-bottom: 2em;
+  }
+  section.faq .questions {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.faq .questions .question {
+    padding: 1.5em;
+    width: 43%;
+  }
+  section.faq .questions .question h3, section.faq .questions .question p {
+    margin: 0;
+  }
+  section.faq .questions .question p {
+    margin-top: 1em;
+  }
+  section.cta {
+    padding-top: 6em;
+    padding-bottom: 7em;
+  }
+  section.cta .cta-email .cta-submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50%;
+    margin: 2.9em auto auto auto;
+  }
+  section.cta .cta-email .cta-submit input {
+    margin: auto;
+    width: 60%;
+  }
+  section.cta .cta-email .cta-submit .cta-email-btn-div {
+    margin: auto;
+  }
+  section.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.footer .logo {
+    width: auto;
+    margin: auto 0;
+    max-width: 18em;
+  }
+  section.footer .logo * {
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  section.events .container .events {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.events .container .events .event {
+    margin-left: 4em;
+    height: 28em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.events .container .events .event img {
+    margin: auto;
+  }
+  section.faq .questions {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.faq .questions .question {
+    padding: 1.5em;
+    max-width: 20%;
+  }
+  section.faq .questions .question h3, section.faq .questions .question p {
+    margin: 0;
+  }
+  section.faq .questions .question p {
+    margin-top: 1em;
+  }
+  section.cta .cta-email .cta-submit {
+    max-width: 550px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
