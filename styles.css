@@ -266,7 +266,7 @@ section.faq .header {
 section.faq .question {
   margin-top: 2.4em;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 13px;
   -webkit-box-shadow: 0px 8px 30px 5px rgba(112, 144, 176, 0.15);
           box-shadow: 0px 8px 30px 5px rgba(112, 144, 176, 0.15);
   padding: 1em;
@@ -505,7 +505,7 @@ ul {
     height: 26em;
   }
   section.activities {
-    margin-top: 12em;
+    margin-top: 9em;
     padding-top: 4em;
     padding-bottom: 8em;
   }
@@ -513,7 +513,7 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 7em;
+    margin-top: 6em;
   }
   section.activities .container .activity img {
     margin: auto;
@@ -532,7 +532,7 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 10em;
+    min-height: 10em;
   }
   section.activities .container .activity .right-side h2, section.activities .container .activity .right-side p {
     margin-top: 0;
@@ -590,7 +590,7 @@ ul {
   }
   section.cta .cta-email .cta-submit input {
     margin: auto;
-    width: 60%;
+    width: 50%;
   }
   section.cta .cta-email .cta-submit .cta-email-btn-div {
     margin: auto;

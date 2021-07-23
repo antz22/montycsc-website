@@ -271,7 +271,7 @@ section.faq {
 	.question {
 		margin-top: 2.4em;
 		background-color: white;
-		border-radius: 20px;
+		border-radius: 13px;
 		box-shadow: 0px 8px 30px 5px rgba(112, 144, 176, 0.15);
 		padding: 1em;
 
@@ -521,7 +521,7 @@ ul {
 	}
 
 	section.activities {
-		margin-top: 12em;
+		margin-top: 9em;
 		padding-top: 4em;
 		padding-bottom: 8em;
 
@@ -530,7 +530,7 @@ ul {
 			.activity {
 				// height: 10em;
 				display: flex;
-				margin-top: 7em;
+				margin-top: 6em;
 
 				img {
 					margin: auto;
@@ -543,7 +543,7 @@ ul {
 					display: flex;
 					flex-direction: column;
 					justify-content: space-between;
-					height: 10em;
+					min-height: 10em;
 
 					h2, p {
 						margin-top: 0;
@@ -612,7 +612,7 @@ ul {
 
 				input {
 					margin: auto;
-					width: 60%;
+					width: 50%;
 				}
 
 				.cta-email-btn-div {
