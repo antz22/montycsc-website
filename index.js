@@ -3,9 +3,17 @@ nav = document.querySelector('nav');
 mobileBtnExit = document.getElementById('mobile-exit');
 
 mobileBtn.addEventListener('click', () => {
-	nav.classList.add('menu-btn');
+	// nav.style.display = 'block';
+	// mobileBtn.style.display = 'none';
+	nav.classList.toggle('menu-btn');
+	console.log(nav.classList)
+	console.log(nav.style)
 })
 
 mobileBtnExit.addEventListener('click', () => {
-	nav.classList.remove('menu-btn');
+	// nav.style.display = 'none';
+	// mobileBtn.style.display = 'block';
+	nav.classList.toggle('menu-btn');
+	console.log(nav.classList)
+	console.log(nav.style)
 })

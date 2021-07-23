@@ -47,11 +47,36 @@ body {
 
 .navbar .container nav {
   display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 56%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  padding: 1em;
+  background-color: var(--primary-color);
+}
+
+.navbar .container nav ul {
+  margin-top: 5em;
+}
+
+.navbar .container nav li a {
+  display: block;
+  color: white;
+  padding: .5em 2em .5em .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.navbar .container nav li a:hover {
+  font-weight: bold;
 }
 
 .navbar .container nav .mobile-menu-exit {
   float: right;
-  margin: .5em;
+  display: block;
+  margin: 2em 2.3em 2em 0;
   cursor: pointer;
 }
 
@@ -69,7 +94,11 @@ body {
 
 .navbar .container nav .nav-cta a {
   color: white;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+nav.menu-btn {
+  display: block !important;
 }
 
 section {
@@ -81,7 +110,7 @@ a {
 }
 
 div.hero-ctnr {
-  max-width: 1272px;
+  max-width: 1072px;
   margin: auto;
 }
 
@@ -175,6 +204,11 @@ section.activities .activity h2 {
 
 section.activities .activity p {
   margin-top: 1.2em;
+  line-height: 1.5;
+}
+
+section.activities .activity .workshop-link {
+  margin-top: 1.2em;
 }
 
 section.activities .activity .workshop-link a {
@@ -183,10 +217,11 @@ section.activities .activity .workshop-link a {
   border-radius: 12px;
   background-color: white;
   padding: .8em;
-  padding-right: 36px;
+  padding-right: 40px;
 }
 
 section.activities .activity .workshop-link #arrow {
+  margin: auto;
   width: 20px;
   position: absolute;
   margin-left: 6px;
@@ -209,14 +244,14 @@ section.events .event {
 }
 
 section.events .event img {
-  margin-top: 1.4em;
+  margin-top: 0.8em;
   max-width: 16.4em;
   width: 80%;
   border-radius: 10px;
 }
 
 section.events .event p {
-  margin-top: 1.4em;
+  margin-top: 0.8em;
 }
 
 section.faq {
@@ -373,6 +408,10 @@ ul {
     display: -ms-flexbox;
     display: flex;
   }
+  .navbar .container .nav-left {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
   .navbar .container nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -382,6 +421,7 @@ ul {
             justify-content: space-between;
     background: none;
     position: unset;
+    width: auto;
     height: auto;
     padding: 0;
     margin-top: auto;
@@ -391,14 +431,26 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: auto;
   }
-  .navbar .container nav a {
+  .navbar .container nav li a {
     color: black;
     font-size: 1em;
     padding: .1em 1em;
   }
   .navbar .container nav li.current a {
     font-weight: bold;
+  }
+  .navbar .container nav .nav-cta {
+    background-color: #009973;
+    padding: 0.5em 0.3em;
+    border-radius: 10px;
+    margin-left: 17px;
+    min-width: 6.1em;
+  }
+  .navbar .container nav .nav-cta a {
+    color: white;
+    font-weight: 700;
   }
   section {
     padding: 2em 8em;
@@ -445,12 +497,12 @@ ul {
     position: relative;
   }
   section.hero-right .container .hero-img {
-    width: 25em;
-    height: 30em;
+    width: 20em;
+    height: 26em;
   }
   section.hero-right .container .hero-img img {
-    height: 30em;
-    width: 25em;
+    width: 20em;
+    height: 26em;
   }
   section.activities {
     margin-top: 12em;
@@ -571,8 +623,8 @@ ul {
             justify-content: space-between;
   }
   section.events .container .events .event {
-    margin-left: 4em;
     height: 28em;
+    width: 30em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

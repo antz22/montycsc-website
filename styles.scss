@@ -40,34 +40,68 @@ body {
 			margin-bottom: auto;
 			cursor: pointer;
 		}
-
+		
 		nav {
 			display: none;
+			
+			position: fixed;
+			z-index: 1000;
+			width: 56%;
+			right: 0;
+			top: 0;
+			height: 100vh;
+			padding: 1em;
+			background-color: var(--primary-color);
+			
+			ul {
+				margin-top: 5em;
+			}
+			
+			li {
+				
+				a {
+					display: block;
+					color: white;
+					padding: .5em 2em .5em .5em;
+					font-size: 1.3em;
+					text-align: right;
+					
+					&:hover {
+						font-weight: bold;
+					}
+				}
+			}
 
 			.mobile-menu-exit {
 				float: right;
-				margin: .5em;
+				display: block;
+				margin: 2em 2.3em 2em 0;
 				cursor: pointer;
 			}
-
+			
 			ul.primary-nav > * {
 				margin-top: auto;
 				margin-bottom: auto;
 			}
-
+			
 			.nav-cta {
 				background-color: #009973;
 				padding: 0.5em 0.3em;
 				border-radius: 10px;
 				margin-left: 17px;
-
+				
 				a {
 					color: white;
-					font-weight: 600;
+					font-weight: 700;
 				}
 			}
+
 		}
 	}
+}
+
+nav.menu-btn {
+	display: block !important;
 }
 
 section {
@@ -79,7 +113,7 @@ a {
 }
 
 div.hero-ctnr {
-	max-width: 1272px;
+	max-width: 1072px;
 	margin: auto;
 }
 
@@ -160,7 +194,7 @@ section.activities {
 
 	.activity {
 		max-width: 1100px;
-		margin:auto;
+		margin: auto;
 
 		img {
 			width: 13.75em;
@@ -174,9 +208,11 @@ section.activities {
 
 		p {
 			margin-top: 1.2em;
+			line-height: 1.5;
 		}
 
 		.workshop-link {
+			margin-top: 1.2em;
 			
 			a {
 				color: var(--primary-color);
@@ -184,10 +220,11 @@ section.activities {
 				border-radius: 12px;
 				background-color: white;
 				padding: .8em;
-				padding-right: 36px;
+				padding-right: 40px;
 			}
 
 			#arrow {
+				margin: auto;
 				width: 20px;
 				position: absolute;
 				margin-left: 6px;
@@ -211,14 +248,14 @@ section.events {
 		max-width: 32em;
 
 		img {
-			margin-top: 1.4em;
+			margin-top: 0.8em;
 			max-width: 16.4em;
 			width: 80%;
 			border-radius: 10px;
 		}
 
 		p {
-			margin-top: 1.4em;
+			margin-top: 0.8em;
 		}
 	}
 }
@@ -357,8 +394,6 @@ ul {
 	padding: 0;
 }
 
-@media only screen and (min-width: 768px) {
-}
 
 
 @media only screen and (min-width: 1080px) {
@@ -376,11 +411,17 @@ ul {
 		display: flex;
 	}
 
+	.navbar .container .nav-left {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
 	.navbar .container nav {
 		display: flex;
 		justify-content: space-between;
 		background: none;
 		position: unset;
+		width: auto;
 		height: auto;
 		padding: 0;
 		margin-top: auto;
@@ -388,16 +429,33 @@ ul {
 
 		ul {
 			display: flex;
+			margin: auto;
 		}
 
-		a {
-			color: black;
-			font-size: 1em;
-			padding: .1em 1em;
+		li {
+
+			a {
+				color: black;
+				font-size: 1em;
+				padding: .1em 1em;
+			}
 		}
 
 		li.current a {
 			font-weight: bold;
+		}
+
+		.nav-cta {
+			background-color: #009973;
+			padding: 0.5em 0.3em;
+			border-radius: 10px;
+			margin-left: 17px;
+			min-width: 6.1em;
+			
+			a {
+				color: white;
+				font-weight: 700;
+			}
 		}
 	}
 
@@ -451,12 +509,12 @@ ul {
 			position: relative;
 
 			.hero-img {
-				width: 25em;
-				height: 30em;
+				width: 20em;
+				height: 26em;
 
 				img {
-					height: 30em;
-					width: 25em;
+					width: 20em;
+					height: 26em;
 				}
 			}
 		}
@@ -595,8 +653,8 @@ ul {
 				justify-content: space-between;
 	
 				.event {
-					margin-left: 4em;
 					height: 28em;
+					width: 30em;
 
 					display: flex;
 					flex-direction: column;
