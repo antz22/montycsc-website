@@ -315,8 +315,8 @@ section.cta .cta-email input::placeholder {
 section.cta .cta-email .cta-email-btn-div {
   background-color: #009973;
   border-radius: 5em;
-  padding: .5em 1.2em;
-  width: 6em;
+  padding: .8em 1.2em;
+  width: 10em;
   margin: 2em auto auto auto;
   cursor: pointer;
 }
