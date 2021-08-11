@@ -9,12 +9,10 @@ Workshops take place weekly in the science wing, covering a wide range of topics
 
 Monty CSC also hosts events including MontyHacks, and prepares students for the American Computer Science League programming competition.
 
-To join, fill out this google form: [interest form](https://forms.gle/HvYdk998iZ3sim5y7)
+To join, fill out this [google form](https://forms.gle/HvYdk998iZ3sim5y7).
 
-Here's our linktree: [linktr.ee/montycompsci](https://linktr.ee/montycompsci)
-
-Follow us on instagram: [@montycompsci](https://www.instagram.com/montycompsci)
-
-Find us on facebook: [montycompsci](https://youtu.be/dQw4w9WgXcQ)
+Here's our linktree: [linktr.ee/montycompsci](https://linktr.ee/montycompsci)\
+Follow us on instagram: [@montycompsci](https://www.instagram.com/montycompsci)\
+Find us on facebook: [montycompsci](https://youtu.be/dQw4w9WgXcQ)\
 
 Hope to see you in school!
