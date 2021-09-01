@@ -66,11 +66,15 @@ body {
   color: white;
   padding: .5em 2em .5em .5em;
   font-size: 1.3em;
+  font-weight: normal;
   text-align: right;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .navbar .container nav li a:hover {
   font-weight: bold;
+  color: white;
 }
 
 .navbar .container nav .mobile-menu-exit {
@@ -95,6 +99,18 @@ body {
 .navbar .container nav .nav-cta a {
   color: white;
   font-weight: 700;
+  -webkit-transition: -webkit-text-decoration-color 300ms;
+  transition: -webkit-text-decoration-color 300ms;
+  transition: text-decoration-color 300ms;
+  transition: text-decoration-color 300ms, -webkit-text-decoration-color 300ms;
+  -webkit-text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+          text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+}
+
+.navbar .container nav .nav-cta a:hover {
+  color: white;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
 }
 
 nav.menu-btn {
@@ -437,9 +453,17 @@ ul {
     color: black;
     font-size: 1em;
     padding: .1em 1em;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    font-weight: 600;
+  }
+  .navbar .container nav li a:hover {
+    font-weight: 600;
+    color: var(--primary-color);
   }
   .navbar .container nav li.current a {
     font-weight: bold;
+    color: var(--primary-color);
   }
   .navbar .container nav .nav-cta {
     background-color: #009973;
@@ -664,4 +688,4 @@ ul {
     max-width: 550px;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=index.css.map */

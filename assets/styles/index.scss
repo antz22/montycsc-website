@@ -64,10 +64,14 @@ body {
                     color: white;
                     padding: .5em 2em .5em .5em;
                     font-size: 1.3em;
+                    font-weight: normal;
                     text-align: right;
+
+                    transition: 0.4s;
                     
                     &:hover {
                         font-weight: bold;
+                        color: white;
                     }
                 }
             }
@@ -93,6 +97,13 @@ body {
                 a {
                     color: white;
                     font-weight: 700;
+                    transition: text-decoration-color 300ms;
+                    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+
+                    &:hover {
+                        color: white;
+                        text-decoration-color: rgb(255, 255, 255);
+                    }
                 }
             }
 
@@ -439,11 +450,20 @@ ul {
                 color: black;
                 font-size: 1em;
                 padding: .1em 1em;
+
+                transition: 0.4s;
+                font-weight: 600;
+                
+                &:hover {
+                    font-weight: 600;
+                    color: var(--primary-color);
+                }
             }
         }
 
         li.current a {
             font-weight: bold;
+            color: var(--primary-color);
         }
 
         .nav-cta {
