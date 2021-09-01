@@ -177,9 +177,9 @@ section.hero-right .hero-img {
   height: 20em;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   z-index: 999;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 section.hero-right .hero-img .hero-img-pic {
@@ -241,6 +241,11 @@ section.activities .activity .workshop-link #arrow {
   width: 20px;
   position: absolute;
   margin-left: 6px;
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-trasnform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 section.events {
