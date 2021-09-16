@@ -23,8 +23,6 @@ a {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 nav.menu-btn {
@@ -136,6 +134,10 @@ nav.menu-btn {
           text-decoration-color: white;
 }
 
+section.info {
+  padding: 1em;
+}
+
 section.info .container {
   text-align: center;
 }
@@ -150,22 +152,31 @@ section.info .container .info-img img {
   border-radius: 12px;
 }
 
-section.workshops .container .note {
-  margin: auto;
+section.links .container .link {
+  margin: auto auto 1em auto;
   background-color: var(--primary-color);
-  padding: 0.5em 1em;
+  padding: 1em;
   border-radius: 10px;
+  max-width: 50vw;
 }
 
-section.workshops .container .note h1 {
+section.links .container .link h1 {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: white;
 }
 
-section.workshops .container .note h1 a {
-  color: #59ecff;
+section.links .container .link ul {
+  line-height: 1.8em;
+}
+
+section.links .container .link ul li {
+  font-size: 1.2em;
+}
+
+section.links .container .link ul a {
   text-decoration: underline;
+  color: white;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -237,4 +248,4 @@ section.workshops .container .note h1 a {
     padding: 2em 8em;
   }
 }
-/*# sourceMappingURL=workshops.css.map */
+/*# sourceMappingURL=links.css.map */

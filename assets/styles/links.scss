@@ -24,8 +24,6 @@ a {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav.menu-btn {
@@ -137,6 +135,8 @@ nav.menu-btn {
 
 section.info {
 
+    padding: 1em;
+
     .container {
         text-align: center;
 
@@ -157,26 +157,36 @@ section.info {
 }
 
 
-section.workshops {
+section.links {
 
     .container {
 
-        .note {
-            margin: auto;
+        .link {
+            margin: auto auto 1em auto;
             background-color: var(--primary-color);
-            padding: 0.5em 1em;
+            padding: 1em;
             border-radius: 10px;
+            max-width: 50vw;
 
             h1 {
                 text-align: center;
-                font-size: 1.2em;
+                font-size: 1.4em;
                 color: white;
+            }
+
+            ul {
+                line-height: 1.8em;
+
+                li {
+                    font-size: 1.2em;
+                }
 
                 a {
-                    color: rgb(89, 236, 255);
                     text-decoration: underline;
+                    color: rgb(255, 255, 255);
                 }
             }
+
         }
     }
 }
@@ -259,7 +269,4 @@ section.workshops {
     section {
         padding: 2em 8em;
     }
-
-
-    
 }
